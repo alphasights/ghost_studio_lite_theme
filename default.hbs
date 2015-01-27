@@ -53,13 +53,7 @@
       <div class="header-overlay"></div>
     {{/if}}
 
-    {{#if @blog.logo}}
-      <h1 class="logo">
-        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>
-      </h1>
-    {{else}}
-      <h1 class="no-logo"><a href="/">{{@blog.title}}</a></h1>
-    {{/if}}
+    <h1 class="no-logo"><a href="/">{{@blog.title}}</a></h1>
 
     <div class="blog-description rte">
       {{@blog.description}}
@@ -84,9 +78,8 @@
     <div class="social-icons clearfix">
       {{> social-links}}
     </div>
-    <p> 2008 - 2014 AlphaSights Ltd. <br>All Rights Reserved.</p>
-<!--     <p>Subscribe via <a href="{{@blog.url}}/rss/">RSS</a></p>
-    <p>Proudly published with <a href="http://tryghost.org">Ghost</a></p> -->
+    <a href="http://www.alphasights.com/"><img src="{{@blog.logo}}" alt="AlphaSights" /></a>
+    <p> 2008 - 2015 AlphaSights Ltd. <br>All Rights Reserved.</p>
   </footer>
 
   {{ghost_foot}}
